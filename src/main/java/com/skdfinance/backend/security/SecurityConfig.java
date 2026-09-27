@@ -92,6 +92,8 @@ public class SecurityConfig {
                         .requestMatchers(HttpMethod.POST, "/api/leads").permitAll()
                         .requestMatchers(HttpMethod.POST, "/api/eligibility/check").permitAll()
                         .requestMatchers(HttpMethod.POST, "/api/testimonials").permitAll()
+                        .requestMatchers("/api/admin/**").hasRole("ADMIN")
+                        
                         .requestMatchers(
                                 "/swagger-ui/**", "/swagger-ui.html", "/v3/api-docs/**"
                         ).permitAll()
