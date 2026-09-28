@@ -26,7 +26,7 @@ public class CorsConfig {
                                 "http://localhost:5173",   // Vite dev server, if you use one
                                 "http://127.0.0.1:5500",   // VS Code Live Server, for the static HTML build
                                 "https://skdfinance.com",  // TODO: replace with your real production domain
-                                "https://www.skdfinance.com"
+                                "https://skdfrontend.vaibhavhemanth777.workers.dev/"
                         )
                         .allowedMethods("GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
